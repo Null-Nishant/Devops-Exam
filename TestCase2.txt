@@ -1,0 +1,12 @@
+nishant@Acer:~$ cd ~
+nishant@Acer:~$ touch index.html
+nishant@Acer:~$ echo "<html><body><h1>Hello World</h1></body></html>" > index.html
+nishant@Acer:~$ ls -l index.html
+-rw-rw-r-- 1 nishant nishant 47 Apr 24 11:05 index.html
+nishant@Acer:~$ chmod 777 index.html
+nishant@Acer:~$ ls -l index.html
+-rwxrwxrwx 1 nishant nishant 47 Apr 24 11:05 index.html
+nishant@Acer:~$ sudo chown www-data:www-data index.html
+nishant@Acer:~$ sudo chmod 755 index.html
+nishant@Acer:~$ ls -l index.html
+-rwxr-xr-x 1 www-data www-data 47 Apr 24 11:05 index.html
